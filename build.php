@@ -28,7 +28,10 @@ foreach ($iterator as $item) {
     rename($item->getPathname(), refactor($item->getPathname()));
 }
 var_dump('Move to plugin folder...');
-exec('mv ' . $tempFolder . '/m5 ' . __DIR__ . '/../plugins/' . $dataConfig['PLUGIN_NAME'] . 'Bundle');
+if (!is_dir(__DIR__ . '/../plugins/' . $dataConfig['PLUGIN_NAME'] . 'Bundle')) {
+    mkdir(__DIR__ . '/../plugins/' . $dataConfig['PLUGIN_NAME'] . 'Bundle');
+}
+exec('mv ' . $tempFolder . '/m5/* ' . __DIR__ . '/../plugins/' . $dataConfig['PLUGIN_NAME'] . 'Bundle');
 var_dump('Deleting temp');
 
 if (is_dir($tempFolder)) {
