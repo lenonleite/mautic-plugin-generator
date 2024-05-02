@@ -1,0 +1,24 @@
+{
+  "name": "##PLUGIN_COMPOSER_NAME##",
+  "description": "##PLUGIN_COMPOSER_DESCRIPTION##",
+  "type": "mautic-plugin",
+  "license": "##PLUGIN_COMPOSER_LICENSE##",
+  "authors": [
+      {
+          "name": "##PLUGIN_COMPOSER_AUTHORS_NAME##",
+          "email": "##PLUGIN_COMPOSER_AUTHORS_EMAIL##"
+      }
+  ],
+  "keywords": [
+    "mautic",
+    "plugin",
+    "integration"
+  ],
+  "extra": {
+      "install-directory-name": "##PLUGIN_BUNDLE_NAME##",
+  },
+  "minimum-stability": "dev",
+  "require": {
+      "mautic/core-lib": "^5.0"
+  }
+}
