@@ -1,15 +1,15 @@
 <?php
 
-$pluginName = 'LeuchtfeuerCompanyPoints';
+$pluginName = 'LenonLeite';
 $bundleName = $pluginName . 'Bundle';
-$pluginConfigName = 'Company Points by Leuchtfeuer';
+$pluginConfigName = 'Scarffold mautic plugin by Lenon Leite';
 $pluginIntegrationDisplayName = $pluginConfigName;
-$pluginConfigDescription = 'Massively enhanced Company-based Scoring';
+$pluginConfigDescription = 'This is a plugin for Mautic.';
 $pluginConfigVersion = '1.0.0';
-$pluginConfigAuthor = 'Leuchtfeuer Digital Marketing GmbH';
-$pluginComposerName = 'leuchtfeuer/mautic-companypoints-bundle';
+$pluginConfigAuthor = 'Lenon Leite';
+$pluginComposerName = 'lenonleite/mautic-plugin-generator';
 $pluginComposerDescription = $pluginConfigDescription;
-$pluginComposerAuthorsEmail = 'mautic-plugins@Leuchtfeuer.com';
+$pluginComposerAuthorsEmail = 'lenonleite@gmail.com';
 $pluginComposerLicense = 'GPL-3.0';
 $pluginComposerAuthorsName = $pluginConfigAuthor;
 
