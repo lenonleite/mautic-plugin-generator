@@ -24,6 +24,9 @@ return [
                 'tags'  => [
                     'mautic.integrations.helper',
                 ],
+                'arguments' => [
+                    'mautic.integrations.helper',
+                ],
             ],
         ],
     ],
