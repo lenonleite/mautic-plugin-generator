@@ -1,8 +1,14 @@
 <?php
+declare(strict_types=1);
+// choice m4 or m5, for default is m5
+$version = 'm5';
+if ($argc > 1) {
+    $version = $argv[1];
+}
 
 var_dump('Loading files...');
 $dataConfig = include __DIR__ . '/config.php';
-$path = __DIR__ . '/Scarffold/m5';
+$path = __DIR__ . '/Scarffold/'.$version;
 $tempFolder = __DIR__ . '/temp';
 var_dump('Creating temp folder...');
 if (is_dir($tempFolder)) {
@@ -31,7 +37,7 @@ var_dump('Move to plugin folder...');
 if (!is_dir(__DIR__ . '/../plugins/' . $dataConfig['PLUGIN_NAME'] . 'Bundle')) {
     mkdir(__DIR__ . '/../plugins/' . $dataConfig['PLUGIN_NAME'] . 'Bundle');
 }
-exec('mv ' . $tempFolder . '/m5/* ' . __DIR__ . '/../plugins/' . $dataConfig['PLUGIN_NAME'] . 'Bundle');
+exec('mv ' . $tempFolder . '/'.$version.'/* ' . __DIR__ . '/../plugins/' . $dataConfig['PLUGIN_NAME'] . 'Bundle');
 var_dump('Deleting temp');
 
 if (is_dir($tempFolder)) {

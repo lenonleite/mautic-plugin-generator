@@ -1,13 +1,13 @@
 <?php
 
-$pluginName = 'LenonLeite';
+$pluginName = 'LenonLeiteM5ExamplePlugin';
 $bundleName = $pluginName . 'Bundle';
-$pluginConfigName = 'Scarffold mautic plugin by Lenon Leite';
+$pluginConfigName = 'Example of plugin to Mautic 5';
 $pluginIntegrationDisplayName = $pluginConfigName;
-$pluginConfigDescription = 'This is a plugin for Mautic.';
+$pluginConfigDescription = 'This plugin is simple example of plugin to Mautic 5';
 $pluginConfigVersion = '1.0.0';
 $pluginConfigAuthor = 'Lenon Leite';
-$pluginComposerName = 'lenonleite/mautic-plugin-generator';
+$pluginComposerName = 'lenonleite/lenonleite-m5-example-plugin';
 $pluginComposerDescription = $pluginConfigDescription;
 $pluginComposerAuthorsEmail = 'lenonleite@gmail.com';
 $pluginComposerLicense = 'GPL-3.0';
